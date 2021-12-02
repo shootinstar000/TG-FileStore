@@ -48,7 +48,7 @@ async def start(bot: Client, cmd: Message):
 				[
 					[
 						InlineKeyboardButton("🔆request movies🔆", url="https://t.me/+OS6KCS7d8G4wOWE1"),
-						InlineKeyboardButton("🔍search movies", url="https://t.me/TeleRoidGroup"),
+						InlineKeyboardButton("🔍search movies", url="https://t.me/bratflix_movie_search_bot"),
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
                                         ],
                                         [
@@ -378,15 +378,19 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔅 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔆 Cʜᴀɴɴᴇʟ", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔆request movies🔆", url="https://t.me/+OS6KCS7d8G4wOWE1"),
+						InlineKeyboardButton("🔍search movies", url="https://t.me/bratflix_movie_search_bot"),
+						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
+                                        ],
+                                        [
+						InlineKeyboardButton("👨‍🔧 Owner", callback_data="aboutdevs"),
+						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/bratflix")
 					],
-					[
-						InlineKeyboardButton("🤖 Aʙᴏᴜᴛ Bᴏᴛ", callback_data="aboutbot"),
-						InlineKeyboardButton("👮 Aʙᴏᴜᴛ Dᴇᴠ", callback_data="aboutdevs")
+                                        [
+						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
 					]
 				]
-			)
+            )
         )
 
     elif cb_data.startswith("ban_user_"):
