@@ -30,7 +30,7 @@ This is a private bot only for @bratflix
 │
 ├🔹📡 **Hosted On:** [𝐇𝐞𝐫𝐨𝐤𝐮](https://heroku.com)
 │
-├🔸👨‍💻 **owner:** [@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫](https://t.me/lilbratsagar) 
+├🔸👨‍💻 **owner:** [@lilbratsagar](https://t.me/lilbratsagar) 
 │
 ├🔸🔔 **Backup :** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/bratflix)
 │
