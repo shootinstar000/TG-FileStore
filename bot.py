@@ -75,7 +75,7 @@ async def start(bot: Client, cmd: Message):
                 message_ids.append(int(GetMessage.message_id))
             for i in range(len(message_ids)):
                 await SendMediaAndReply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
-            await cmd.reply_text(f"Congrats! you have received all the files that you were looking for")
+            await cmd.reply_text(f"Congrats! you have received all the files that you were looking for\n\nEnjoy ur show😁")
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
