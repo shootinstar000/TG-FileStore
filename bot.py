@@ -322,7 +322,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
 						InlineKeyboardButton("🔆request movies🔆", url="https://t.me/+OS6KCS7d8G4wOWE1"),
-						InlineKeyboardButton("🔍search movies", url="https://t.me/TeleRoidGroup"),
+						InlineKeyboardButton("🔍search movies", url="https://t.me/bratflix_movie_search_bot"),
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
                                         ],
                                         [
