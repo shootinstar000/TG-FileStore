@@ -10,7 +10,7 @@ from handlers.helpers import str_to_b64
 
 async def ReplyForward(message: Message, file_id: int):
     try:
-        await msg=message.reply_text(
+        msg = await message.reply_text(
             f"🔸 **Here is your requested file:**\n"
             f"🔸 __Please wait for other files also!__",
             disable_web_page_preview=True, quote=True)
