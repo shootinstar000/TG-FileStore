@@ -29,8 +29,8 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**\n\n"
-                 "Due to Overland Use Only Channel Subscribers can Use this Bot!",
+            text="**Please Join My update Channel for getting movies/series!**\n\n"
+                 "after joining the channel click on the download link again!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
