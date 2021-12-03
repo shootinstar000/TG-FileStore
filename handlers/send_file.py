@@ -14,8 +14,8 @@ async def ReplyForward(message: Message, file_id: int):
             f"🔸 **Here is your requested file:**\n"
             f"🔸 __Please wait for other files also!__",
             disable_web_page_preview=True, quote=True)
-            asyncio.sleep(2)
-            msg.delete()
+        await asyncio.sleep(2)
+        msg.delete
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await ReplyForward(message, file_id)
