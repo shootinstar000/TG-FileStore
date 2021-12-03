@@ -10,12 +10,10 @@ from handlers.helpers import str_to_b64
 
 async def ReplyForward(message: Message, file_id: int):
     try:
-        msg = await message.reply_text(
+        await message.reply_text(
             f"🔸 **Here is your requested file:**\n"
             f"🔸 __Please wait for other files also!__",
             disable_web_page_preview=True, quote=True)
-        await asyncio.sleep(2)
-        msg.delete()
     except FloodWait as e:
         await asyncio.sleep(e.x)
         await ReplyForward(message, file_id)
@@ -36,5 +34,6 @@ async def MediaForward(bot: Client, user_id: int, file_id: int):
 
 async def SendMediaAndReply(bot: Client, user_id: int, file_id: int):
     sent_message = await MediaForward(bot, user_id, file_id)
-    await ReplyForward(message=sent_message, file_id=file_id)
+    msg=await ReplyForward(message=sent_message, file_id=file_id)
     await asyncio.sleep(2)
+    msg.delete()
